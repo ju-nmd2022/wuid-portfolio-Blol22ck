@@ -29,9 +29,6 @@ main{
     "start-1 end-1";
     gap: 10rem;
     text-align: center;
-    -webkit-column-width: 50px;
-    -moz-column-width: 50px;
-    column-width: 50px;
 }
 
 img{
@@ -88,15 +85,20 @@ a{
     background-color: #303030;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:300px) {
     main{
         max-width: 300px;
-    }
-
-    img{
-        max-width: 100%;   
     }
     .column-text{
         columns: 2;
     }
+    
+    .container{
+        display: grid;
+    grid-template-columns: 3fr 3fr(autofit, 300px);
+    grid-template-areas: 
+    "start-1 end-1";
+    gap: 10rem;
+    text-align: center;
+}
     }
