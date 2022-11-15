@@ -1,0 +1,102 @@
+html, 
+body {
+margin: 0px;
+font-family: Arial, Helvetica, sans-serif;
+color: aliceblue;
+}
+
+main{
+    max-width: 500px;
+    margin: auto;
+}
+
+.portfolio{
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    color: aliceblue;
+    text-decoration-line: overline;
+    text-decoration-color: orange;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 3fr 3fr(autofit, 300px);
+    grid-template-areas: 
+    "start-1 end-1";
+    gap: 10rem;
+    text-align: center;
+    -webkit-column-width: 50px;
+    -moz-column-width: 50px;
+    column-width: 50px;
+}
+
+img{
+    max-width: 300px;
+    text-align: center;
+}
+
+
+
+/*
+
+.item-2 {
+    text-align: center;
+    grid-area: item-2;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+
+.item-3 {
+    text-align: center;
+    grid-area: item-3;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    
+}
+
+.item-4{
+    
+    grid-area: item-4;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+
+a{
+    text-decoration: none;
+}
+
+.item-5 {
+    grid-area: item-5;
+    text-align: center;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.item-6{
+    grid-area: item-6;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+*/
+.background{
+    background-color: #303030;
+}
+
+@media screen and (max-width:600px) {
+    main{
+        max-width: 300px;
+    }
+
+    img{
+        max-width: 100%;   
+    }
+    .column-text{
+        columns: 2;
+    }
+    }
