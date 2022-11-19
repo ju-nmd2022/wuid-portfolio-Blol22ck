@@ -29,6 +29,12 @@ h1{
     font-weight: lighter;
     color: rgb(222, 222, 222);
     font-size:30px;
+
+    animation-name: h1-animation;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
 }
 
 h2{
@@ -64,4 +70,30 @@ section  {
     width: 100%;
     height: auto;
     margin-top: 100px;
+
+    animation-name: picture;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes h1-animation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+@keyframes picture {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
 }
