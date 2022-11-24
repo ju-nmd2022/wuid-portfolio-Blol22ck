@@ -1,0 +1,20 @@
+#plankicon {
+    visibility: hidden;
+}
+
+#hammericon {
+    visibility: hidden;
+}
+
+#nailicon {
+    visibility: hidden;
+}
+
+a {
+    color: black;
+    font-size: larger;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
